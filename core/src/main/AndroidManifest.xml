@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baidu.aip.asrwakeup3.core">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 蓝牙录音使用，不需要可以去除 -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <application>
+        <!--Android在处理meta－data的时候如果value可以转化为数值类型，那么它将会被转型。在代码中就无法通过getString获取到这个值了。-->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="0x18224bf"/>
+
+        <meta-data
+                android:name="com.baidu.speech.API_KEY"
+                android:value="QGAaT5qQPjXrRF78AolED075"/>
+        <meta-data
+                android:name="com.baidu.speech.SECRET_KEY"
+                android:value="AnaDBdquRiDgPnTHd8mOOnYMG81p4qT1"/>
+    </application>
+</manifest>
